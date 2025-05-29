@@ -129,5 +129,11 @@ You must:
 3. Include a `README.md` with setup and sample requests
 4. Submit your GitHub repo link
 
+---
+
+## ⚙️ How we will test the solution
+We will test the solution on this application. Feel free to use it to verify if your code works as described.
+https://github.com/Pulsetto24/onesignal-notifications-app
+
 Good luck! 🚀
 
