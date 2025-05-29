@@ -67,41 +67,6 @@ Disables notifications for the user.
   
 ---
 
-### 4. Authentication (JWT)
-
-All API endpoints must be protected using **JWT-based authentication**.
-
-### Requirements:
-- Implement basic JWT authentication (hardcoded user credentials are acceptable for this task).
-- Each request to protected endpoints must include a valid `Authorization: Bearer <token>` header.
-- You should provide:
-  - A login endpoint (e.g. `POST /api/auth/login`) that returns a JWT token for a known username/password.
-  - Token validation middleware configured in your ASP.NET Core app.
-
-### Example Login Request:
-```json
-{
-  "username": "testuser",
-  "password": "password123"
-}
-```
-
-### Example Login Response:
-```json
-{
-  "token": "<jwt-token-string>"
-}
-```
-
-This token should be required for:
-- `setNotificationTime`
-- `enableNotifications`
-- `disableNotifications`
-
-You may skip user registration logic — using a single hardcoded test user is fine.
-
----
-
 ## 📦 Deliverables
 
 Your GitHub repository should include:
@@ -150,7 +115,6 @@ You must:
 
 ## ✅ Summary of Expectations
 
-- JWT authentication with a simple login
 - Notification scheduling based on user preference
 - OneSignal integration (real or mocked)
 - MySQL-backed data storage
